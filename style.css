@@ -1,0 +1,387 @@
+
+body {
+  margin: 0px;
+  font-family: "Raleway";
+}
+
+/* Partie HEADER */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  margin: 0px auto;
+  max-width: 1440px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.logo {
+  height: 60%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.button-container > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0px 20px ;
+  box-sizing: border-box; /* Pour que paddin et border soient à l'interieur de la div et ne changent pas sa taille*/
+  -moz-box-sizing: border-box; /*pour anciens navigateurs*/
+  -webkit-box-sizing: border-box; /*pour anciens navigateurs*/
+}
+.button-container > div:hover {
+  border-top: 3px solid #0065FC;
+}
+
+.selected-top {
+  border-top: 3px solid #0065FC;
+}
+
+.button-container a {
+  color: #0065FC;
+  text-decoration: none;
+  font-family: "Raleway";
+}
+
+.bouton-header-hebergements {
+  color: blue;
+  text-decoration: none;
+}
+
+.bouton-header-activites {
+  color: grey !important;
+}
+
+.bouton-header-sinscrire {
+  font-weight: bold;
+  
+}
+
+/* Partie MAIN */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  max-width: 1440px;
+}
+.main-header {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red;
+  box-sizing: border-box; */
+}
+.find-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  width: 30%;
+  margin-bottom: 10px;
+  border-radius: 15px; 
+  /* background-color:#F2F2F2; */
+}
+
+.map-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 15%;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #F2F2F2;
+}
+
+.city-country {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 40px;
+  width: 60%;
+  background-color: white;
+}
+
+.find-button {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  height: 40px;
+  width: 30%;
+  padding-left: 20px;
+  border-radius: 0px 15px 15px 0px;
+  Color: white;
+  background-color: #0065FC;
+}
+
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  height: 650px;
+  width: 100%;
+}
+
+/* Hébergements à Marseille */
+
+.top-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 70%;
+  margin-right: 20px;
+  background-color: #F2F2F2;
+  border-radius: 24px;
+  padding: 20px;
+  box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
+  -moz-box-sizing: border-box; /*pour anciens navigateurs*/
+  -webkit-box-sizing: border-box;/*pour anciens navigateurs*/
+}
+
+.top-container-left .line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35%;
+  width: 100%;
+  /* border: 1px solid brown;
+  box-sizing: border-box; */
+}
+
+.top-container-left .hotel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 31%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 0px 17px #00000021;
+  border: 5px solid white;
+  border-radius: 20px;
+  box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
+  -moz-box-sizing: border-box; /*pour anciens navigateurs*/
+  -webkit-box-sizing: border-box;/*pour anciens navigateurs*/
+}
+
+.top-container-left .hotel .img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+}
+
+.top-container-left .hotel .textHotel {
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  justify-content: space-around;
+  margin-left: 8px;
+}
+
+.textHotel h4 {
+  display: block;
+  font-size: 21px;
+  margin: 0px;
+}
+.textHotel p {
+  display: block;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.star > .blue {
+  color: #0065FC;
+}
+
+.star > .grey {
+  color: grey;
+}
+
+/* Les plus populaires */
+
+.top-container-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #F2F2F2;
+  border-radius: 24px;
+  box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
+  -moz-box-sizing: border-box; /*pour anciens navigateurs*/
+  -webkit-box-sizing: border-box;/*pour anciens navigateurs*/
+}
+
+.top-container-right .title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+    /* border: 1px solid rgb(0, 174, 255);
+    box-sizing: border-box; */
+}
+
+.top-container-right .title-container i {
+  font-size: 24px;
+}
+
+.top-container-right .hotels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.top-container-right .hotel {
+  display: flex;
+  height: 26%;
+  width: 88%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 17px #00000021;
+  box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
+  -moz-box-sizing: border-box; /*pour anciens navigateurs*/
+  -webkit-box-sizing: border-box;/*pour anciens navigateurs*/
+}
+
+.top-container-right .hotel .img {
+  width: 37%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-container-right .hotel .textHotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 80%;
+  padding-left: 10px;
+}
+
+/* Activités à Marseille */
+
+.bot-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  margin: 30px 0px;
+  border: 1px solid chartreuse;
+  box-sizing: border-box;
+}
+.activities-main-title {
+  display: flex;
+  height: 10%;
+  width: 100%;
+}
+.activities {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 90%;
+  width: 100%;
+}
+
+.activities .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 22%;
+}
+
+.activities .activity {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 0px 17px #00000021;
+}
+
+.activities .big {
+  height: 100%
+}
+/* .column-small-activities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  width: 22%;
+} */
+.activities .activity .activity-titile {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 55px;
+  padding-left: 25px; 
+}
+
+/* .activities .small {
+  height: 40%;
+  width: 22%;
+} */
+
+.activities .activity .img {
+  display: flex;
+  height: auto;
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Partie FOOTER */
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: #F2F2F2;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0px auto;
+  max-width: 1440px;
+}
+.contenu-footer {
+  width: 30%;
+  height: 100%;
+}
+
+.footer-small-title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.under-title {
+  color: black;
+  display: block;
+  margin: 15px 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
