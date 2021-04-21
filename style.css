@@ -36,33 +36,29 @@ body {
   flex-direction: row;
   height: 100%;
 }
-.button-container > div {
+
+.button-container a {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin: 0px 20px;
   justify-content: center;
-  margin: 0px 20px ;
+  color: #0065FC;
+  text-decoration: none;
+  font-family: "Raleway";
   box-sizing: border-box; /* Pour que paddin et border soient à l'interieur de la div et ne changent pas sa taille*/
   -moz-box-sizing: border-box; /*pour anciens navigateurs*/
   -webkit-box-sizing: border-box; /*pour anciens navigateurs*/
 }
-.button-container > div:hover {
-  border-top: 3px solid #0065FC;
+
+.button-container > a:hover {
+  border-top: 5px solid #0065FC;
+  padding-bottom: 5px;
 }
 
 .selected-top {
-  border-top: 3px solid #0065FC;
-}
-
-.button-container a {
-  color: #0065FC;
-  text-decoration: none;
-  font-family: "Raleway";
-}
-
-.bouton-header-hebergements {
-  color: blue;
-  text-decoration: none;
+  border-top: 5px solid #0065FC;
+  padding-bottom: 5px;
 }
 
 .bouton-header-activites {
@@ -159,10 +155,11 @@ body {
 .filters-title {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
-.button {
+.filters-container .button {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -170,15 +167,28 @@ body {
   border-top: 1px solid #F2F2F2;
   border-right: 1px solid #F2F2F2;
   border-bottom: 1px solid #F2F2F2;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
   margin: 10px;
+  padding-left: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
+  -moz-box-sizing: border-box; /*pour anciens navigateurs*/
+  -webkit-box-sizing: border-box;/*pour anciens navigateurs*/
 } 
-.icon {
+
+.filters-container .button:hover {
+  background-color: #F2F2F2;
+} 
+
+.filters-container .icon {
+  position: absolute;
+  left: -22.5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   color:  #0065FC;
   background-color: #DEEBFF;
   border-radius: 100%;
@@ -382,22 +392,27 @@ body {
   height: 600px;    
 }
 
+.activities-container .big-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22%;
+  height: 85%;
+}
+.big-bloc {
+  display: flex;
+  flex-direction: column;
+  width : 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 17px #00000021;
+} 
+
 .title {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 20px;
-}
-
-.big-bloc {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: end; */
-  width : 22%;
-  height: 85%;
-  /* box-sizing: border-box; */
-  border-radius: 20px;
-  box-shadow: 0px 0px 17px #00000021;
 }
 
 .big-image {
@@ -464,3 +479,4 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+
