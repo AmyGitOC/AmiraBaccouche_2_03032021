@@ -144,6 +144,9 @@ body {
   cursor: pointer;
 }
 
+..find-container .find-button span {
+  font-weight: bold;
+}
 .find-container .find-button i {
   display: none;
 }
@@ -759,7 +762,7 @@ body {
   .find-container .find-button i {
     display: block;
   }
-  .find-container .find-button p {
+  .find-container .find-button span {
     display: none;
   }
   /* hebegrement a marseille */
