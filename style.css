@@ -288,10 +288,18 @@ body {
   -webkit-box-sizing: border-box;/*pour anciens navigateurs*/
 }
 
+.hotel:hover {
+  transform: scale(1.02);
+}
+
 .top-container-left .hotel .img {
   width: 100%;
   height: 55%;
   object-fit: cover;
+}
+.top-container-left a {
+  text-decoration: none;
+  color: black;
 }
 
 .top-container-left .hotel .textHotel {
@@ -359,6 +367,10 @@ body {
   align-items: center;
   height: 100%;
 }
+.hotels a {
+  text-decoration: none;
+  color: black;
+}
 
 .top-container-right .hotel {
   display: flex;
@@ -372,6 +384,10 @@ body {
   box-sizing: border-box; /* Pour que padding et le border soient à l'interieur de la div et ne changent pas sa taille*/
   -moz-box-sizing: border-box; /*pour anciens navigateurs*/
   -webkit-box-sizing: border-box;/*pour anciens navigateurs*/
+}
+
+.hotel:hover {
+  transform: scale(1.02);
 }
 
 .top-container-right .hotel .img {
@@ -423,6 +439,11 @@ body {
   width: 44%;
   height: 85%;
 }
+
+.big-col a {
+  text-decoration: none;
+  color: black;
+}
 .big-bloc {
   display: flex;
   flex-direction: column;
@@ -431,6 +452,10 @@ body {
   border-radius: 20px;
   box-shadow: 0px 0px 17px #00000021;
 } 
+
+.big-bloc:hover {
+  transform: scale(1.02);
+}
 
 .title {
   display: flex;
@@ -449,6 +474,10 @@ body {
 .little-bloc {
   border-radius: 20px;
   box-shadow: 0px 0px 17px #00000021;   
+}
+
+.little-bloc:hover {
+  transform: scale(1.02);
 }
 
 .small-image {
@@ -493,6 +522,10 @@ body {
   margin: 15px 0;
   font-weight: 500;
   text-decoration: none;
+}
+
+.under-title:hover {
+  color: #0065FC;
 }
 
 /* Mode tablette */
@@ -553,6 +586,8 @@ body {
     align-items: center;
     height: 5%;
     width: 100%;
+      /* border: 1px solid rgb(0, 174, 255);
+      box-sizing: border-box; */
   }
   
   .top-container-right .title-container i {
