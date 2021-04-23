@@ -144,7 +144,7 @@ body {
   cursor: pointer;
 }
 
-..find-container .find-button span {
+.find-container .find-button span {
   font-weight: bold;
 }
 .find-container .find-button i {
